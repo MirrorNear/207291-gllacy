@@ -19,15 +19,21 @@
                 </ul>
                 <ul class="user-navigation">
                     <li class="search">
-                        <img src="img/magnifier.svg" alt="поиск" width="17" height="17">
+                        <a href="#">
+                            <img src="img/magnifier.svg" alt="поиск" width="17" height="17">
+                        </a>
                         <a href="#">Поиск</a>
                     </li>
                     <li class="login-link">
-                        <img src="img/in.svg" alt="вход" width="21" height="19">
-                        <a href="#">Вход</a>
+                        <a href="#">
+                            <img src="img/in.svg" alt="вход" width="21" height="19">
+                        </a>
+                        <a class="login-link" href="#">Вход</a>
                     </li>
                     <li class="basket">
-                        <img src="img/basket.svg" alt="корзина" width="21" height="20">
+                        <a href="#">
+                            <img src="img/basket.svg" alt="корзина" width="21" height="20">
+                        </a>
                         <a href="#">Корзина</a>
                     </li>
                 </ul>
@@ -41,7 +47,7 @@
                 <p class="next-image">
                     <img src="img/3-layers.svg" alt="листалка" width="79" height="21">
                 </p>
-                <a href="#">Давайте оба!</a>
+                <a class="two-ice-cream">Давайте оба!</a>
             </div>
             <h2 class="visually-hidden">Специальные предложения</h2>
             <section class="special-offer">
@@ -152,8 +158,11 @@
                 всегда в курсе всего самого вкусного, что у нас
                 происходит. Обещаем не спамить и не слать всякой
                 не нужной ерунды. Честно =)
-                <input type="email" name="Электронная почта" value="Электронная почта">
-                <input type="button" value="Отправить">
+                <form class="email-adress" action="https://echo.htmlacademy.ru" method="post">
+                    <label for="email-field"></label>
+                    <input type="email" name="Электронная почта" value="Электронная почта" id="email-field">
+                    <input type="button" value="Отправить">
+                </form>
             </section>
             <section class="our-contacts">
                 <img src="img/map.png" alt=" карта">
@@ -168,6 +177,7 @@
                     <b> 8 812 450-25-25</b>
                     (с 10 до 20 ежедневно)
                 </p>
+                 <button class="communication">Форма обратной связи</button>
                 <!-- Здесь будет форма -->
             </section>
         </main>

@@ -19,15 +19,21 @@
                 </ul>
                 <ul class="user-navigation">
                     <li class="search">
-                        <img src="img/magnifier.svg" alt="поиск" width="17" height="17">
+                        <a href="#">
+                            <img src="img/magnifier.svg" alt="поиск" width="17" height="17">
+                        </a>
                         <a href="#">Поиск</a>
                     </li>
                     <li class="login-link">
-                        <img src="img/in.svg" alt="вход" width="21" height="19">
-                        <a href="#">Вход</a>
+                        <a href="#">
+                            <img src="img/in.svg" alt="вход" width="21" height="19">
+                        </a>
+                        <a class="login-link" href="#">Вход</a>
                     </li>
                     <li class="basket">
-                        <img src="img/basket.svg" alt="корзина" width="21" height="20">
+                        <a href="#">
+                            <img src="img/basket.svg" alt="корзина" width="21" height="20">
+                        </a>
                         <a href="#">Корзина</a>
                     </li>
                 </ul>
@@ -49,7 +55,46 @@
             <h2> Сливочное мороженное</h2>
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <!--Здесь будет форма-->
+                <form class="filters"  action="https://echo.htmlacademy.ru" method="post">
+                    <h3>Сортировка:</h3>
+                    <select name="sort" size="1">
+                        <option>По популярности</option>
+                        <option>Сначала недорогие</option>
+                        <option>Сначала дорогие</option>
+                        <option>По жирности</option>
+                    </select>
+                    <fieldset class="range">
+                        <label>
+                            Цена: 100руб. - 500 руб.
+                            <input type="range" name="radio" min="100" max="500">
+                        </label>
+                    </fieldset>
+                    <fieldset class="fat-content">
+                        Жирность:
+                        <iput type="radio" name="percent" id="percent-field-1">
+                        <label for="percent-field-1">0%</label>
+                        <input type="radio" name="pecent" id="pecent-field-2">
+                        <label for="pecent-field-2">до 10%</label>
+                        <input type="radio" name="pecent" id="pecent-field-3">
+                        <label for="pecent-field-3">до 30%</label>
+                        <input type="radio" name="pecent" id="pecent-field-4">
+                        <label for="pecent-field-4">выше 30%</label>
+                    </fieldset>
+                    <fieldset class="fillers">
+                        Наполнители:
+                        <input type="checkbox" name="chocolate" id="chocolate-fillers" checked>
+                        <label for="chocolate-filters">шоколадные</label>
+                        <input type="checkbox" name="sugar-powder" id="sugar-powder-filters" checked>
+                        <label for="sugar-powder-filters">сахарные присыпки</label>
+                        <input type="checkbox" name="fruits" id="fruits-filters">
+                        <label for="fruits-filters">фрукты</label>
+                        <input type="checkbox" name="syrups" id="syrups-filters">
+                        <label for="syrups-filters">сиропы</label>
+                        <input type="checkbox" name="jams" id="jams-filters">
+                        <label for="jams-filters">джемы</label>
+                    </fieldset>
+                    <button type="submit" class="fillers-filters">Применить</button>
+                </form>
             </section>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог</h2>
